@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir este site em varios dispositivo diferente ou simplesmente ou aumente e diminua o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/foto-m.png" type="image/png">
+        <source media="(min-width: 1051px)" srcset="imagem/foto-g.png" type="image/png">
+        <img src="imagem/foto-p.png" alt="">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio no HTML5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/Happy Mistake - RKVC.mp3" type="audio/mpeg">
+        <source src="midia/Happy Mistake - RKVC.OGG" type="audio/OGG">
+        <source src="midia/Happy Mistake - RKVC.WAV" type="audio/WAV">    <p> Se seu navegador não conseguir reproduzir áudio. <a href="midia/Happy Mistake - RKVC.mp3" target="_blank">Clique aqui para baixar o arquivo em MP3</a></p>
+    </audio>
+
+    
+</body>
+</html>
