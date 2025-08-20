@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+}
+
+header h1{
+    color: white;
+}
+
+header p{
+    color: white;
+}
+
+header a{
+    color: white;
+}
+
+body{
+    background-color: darkgray;
+    min-height: 100vh;
+}
