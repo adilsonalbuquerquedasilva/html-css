@@ -5,23 +5,59 @@
     padding: 0px;
 }
 
-header{
-    background-color: black;
-}
-
-header h1{
-    color: white;
-}
-
-header p{
-    color: white;
-}
-
-header a{
-    color: white;
-}
-
 body{
     background-color: darkgray;
     min-height: 100vh;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding: 10vh 0;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: rgb(49, 46, 46);
+    color: white;
+}
+
+.imagem p{
+    background-color: rgba(0, 0, 0, 0.253);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
 }
