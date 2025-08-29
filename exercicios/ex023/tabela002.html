@@ -15,14 +15,26 @@
         padding-bottom: 5px;
     }
 
-    thead{
-        background-color: gray;
+    thead, tfoot{
+        background-color: #383838;
         color: white;
     }
 
     table{
         border-collapse: collapse;
         width: 500px;
+        position: relative;
+    }
+
+    tbody tr:nth-child(even){
+        background-color: lightgray;
+    }
+
+    thead tr th{
+        position: sticky;
+        top: -1px;
+        background-color:  #383838;
+
     }
 
     td, th{
@@ -51,8 +63,8 @@
     <table>
         <caption>População das unidades Federativas</caption>
         <thead>
-            <th>População</th>
-            <th>Habitantes</th>
+            <th scope="col">População</th>
+            <th scope="col" style="width: 50px;">Habitantes</th>
         </thead>
         <tbody>
             <tr>
@@ -166,11 +178,54 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="num"><strong>212.583.750</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium dolores minima accusamus ea exercitationem ducimus cum accusantium, sapiente itaque autem nesciunt corporis ullam voluptas assumenda rem officia error, repudiandae corrupti.
+    Cupiditate, dolorum corrupti? Necessitatibus ratione qui officiis labore harum blanditiis laboriosam illo dignissimos tempore amet, molestiae doloribus architecto? Itaque eius sit exercitationem officiis natus reprehenderit, quisquam magni quaerat distinctio dignissimos.
+    Quaerat molestiae, reiciendis consectetur ducimus dicta, tempore corrupti pariatur itaque ullam quia facere obcaecati illo. Minima repudiandae rerum saepe facere sint nemo, est ullam fuga iusto quam illum veniam distinctio!
+    Vel voluptatibus odit necessitatibus consectetur suscipit aliquam inventore quae asperiores reprehenderit iusto sit placeat, perspiciatis magni, laborum at aliquid quis iste quasi fugiat quos vero ipsa recusandae. Quo, nulla? Aliquam.
+    Fugit laudantium, ipsam aperiam nemo itaque sed quia deleniti corrupti voluptate numquam nihil perspiciatis, accusantium distinctio cum eligendi nostrum voluptates laboriosam nesciunt facere, sequi officiis? Sequi, dolores. A, doloremque earum?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta velit unde officia similique distinctio expedita. Assumenda similique porro distinctio iure amet velit tenetur, ipsum eaque ut provident dolore, ratione fugit.
+    Neque cum iure placeat culpa quis deserunt, possimus unde illo ea optio excepturi saepe recusandae impedit dolorem quasi nulla totam modi sint quaerat temporibus ut earum vero harum. Laudantium, et.
+    Suscipit velit perspiciatis quos, ipsum molestiae recusandae quisquam? Ducimus consequuntur cum nesciunt molestias rem dolores, praesentium quasi voluptatem? Nesciunt minus quasi, hic ex aliquid laudantium non? Eligendi iusto ratione porro.
+    Illo optio distinctio consectetur non itaque repudiandae enim vel, doloribus sit, nisi aperiam soluta omnis delectus nulla quisquam maiores accusantium fuga ullam nostrum saepe dicta reiciendis? Autem pariatur numquam accusamus.
+    Distinctio dignissimos beatae saepe officia reiciendis aut magnam tempora! Dolores quisquam hic, maxime deserunt, dolorem quasi ipsa explicabo expedita perspiciatis odit totam aspernatur repudiandae saepe reprehenderit quaerat modi. Ab, repudiandae.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta velit unde officia similique distinctio expedita. Assumenda similique porro distinctio iure amet velit tenetur, ipsum eaque ut provident dolore, ratione fugit.
+    Neque cum iure placeat culpa quis deserunt, possimus unde illo ea optio excepturi saepe recusandae impedit dolorem quasi nulla totam modi sint quaerat temporibus ut earum vero harum. Laudantium, et.
+    Suscipit velit perspiciatis quos, ipsum molestiae recusandae quisquam? Ducimus consequuntur cum nesciunt molestias rem dolores, praesentium quasi voluptatem? Nesciunt minus quasi, hic ex aliquid laudantium non? Eligendi iusto ratione porro.
+    Illo optio distinctio consectetur non itaque repudiandae enim vel, doloribus sit, nisi aperiam soluta omnis delectus nulla quisquam maiores accusantium fuga ullam nostrum saepe dicta reiciendis? Autem pariatur numquam accusamus.
+    Distinctio dignissimos beatae saepe officia reiciendis aut magnam tempora! Dolores quisquam hic, maxime deserunt, dolorem quasi ipsa explicabo expedita perspiciatis odit totam aspernatur repudiandae saepe reprehenderit quaerat modi. Ab, repudiandae.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta velit unde officia similique distinctio expedita. Assumenda similique porro distinctio iure amet velit tenetur, ipsum eaque ut provident dolore, ratione fugit.
+    Neque cum iure placeat culpa quis deserunt, possimus unde illo ea optio excepturi saepe recusandae impedit dolorem quasi nulla totam modi sint quaerat temporibus ut earum vero harum. Laudantium, et.
+    Suscipit velit perspiciatis quos, ipsum molestiae recusandae quisquam? Ducimus consequuntur cum nesciunt molestias rem dolores, praesentium quasi voluptatem? Nesciunt minus quasi, hic ex aliquid laudantium non? Eligendi iusto ratione porro.
+    Illo optio distinctio consectetur non itaque repudiandae enim vel, doloribus sit, nisi aperiam soluta omnis delectus nulla quisquam maiores accusantium fuga ullam nostrum saepe dicta reiciendis? Autem pariatur numquam accusamus.
+    Distinctio dignissimos beatae saepe officia reiciendis aut magnam tempora! Dolores quisquam hic, maxime deserunt, dolorem quasi ipsa explicabo expedita perspiciatis odit totam aspernatur repudiandae saepe reprehenderit quaerat modi. Ab, repudiandae.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta velit unde officia similique distinctio expedita. Assumenda similique porro distinctio iure amet velit tenetur, ipsum eaque ut provident dolore, ratione fugit.
+    Neque cum iure placeat culpa quis deserunt, possimus unde illo ea optio excepturi saepe recusandae impedit dolorem quasi nulla totam modi sint quaerat temporibus ut earum vero harum. Laudantium, et.
+    Suscipit velit perspiciatis quos, ipsum molestiae recusandae quisquam? Ducimus consequuntur cum nesciunt molestias rem dolores, praesentium quasi voluptatem? Nesciunt minus quasi, hic ex aliquid laudantium non? Eligendi iusto ratione porro.
+    Illo optio distinctio consectetur non itaque repudiandae enim vel, doloribus sit, nisi aperiam soluta omnis delectus nulla quisquam maiores accusantium fuga ullam nostrum saepe dicta reiciendis? Autem pariatur numquam accusamus.
+    Distinctio dignissimos beatae saepe officia reiciendis aut magnam tempora! Dolores quisquam hic, maxime deserunt, dolorem quasi ipsa explicabo expedita perspiciatis odit totam aspernatur repudiandae saepe reprehenderit quaerat modi. Ab, repudiandae.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta velit unde officia similique distinctio expedita. Assumenda similique porro distinctio iure amet velit tenetur, ipsum eaque ut provident dolore, ratione fugit.
+    Neque cum iure placeat culpa quis deserunt, possimus unde illo ea optio excepturi saepe recusandae impedit dolorem quasi nulla totam modi sint quaerat temporibus ut earum vero harum. Laudantium, et.
+    Suscipit velit perspiciatis quos, ipsum molestiae recusandae quisquam? Ducimus consequuntur cum nesciunt molestias rem dolores, praesentium quasi voluptatem? Nesciunt minus quasi, hic ex aliquid laudantium non? Eligendi iusto ratione porro.
+    Illo optio distinctio consectetur non itaque repudiandae enim vel, doloribus sit, nisi aperiam soluta omnis delectus nulla quisquam maiores accusantium fuga ullam nostrum saepe dicta reiciendis? Autem pariatur numquam accusamus.
+    Distinctio dignissimos beatae saepe officia reiciendis aut magnam tempora! Dolores quisquam hic, maxime deserunt, dolorem quasi ipsa explicabo expedita perspiciatis odit totam aspernatur repudiandae saepe reprehenderit quaerat modi. Ab, repudiandae.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta velit unde officia similique distinctio expedita. Assumenda similique porro distinctio iure amet velit tenetur, ipsum eaque ut provident dolore, ratione fugit.
+    Neque cum iure placeat culpa quis deserunt, possimus unde illo ea optio excepturi saepe recusandae impedit dolorem quasi nulla totam modi sint quaerat temporibus ut earum vero harum. Laudantium, et.
+    Suscipit velit perspiciatis quos, ipsum molestiae recusandae quisquam? Ducimus consequuntur cum nesciunt molestias rem dolores, praesentium quasi voluptatem? Nesciunt minus quasi, hic ex aliquid laudantium non? Eligendi iusto ratione porro.
+    Illo optio distinctio consectetur non itaque repudiandae enim vel, doloribus sit, nisi aperiam soluta omnis delectus nulla quisquam maiores accusantium fuga ullam nostrum saepe dicta reiciendis? Autem pariatur numquam accusamus.
+    Distinctio dignissimos beatae saepe officia reiciendis aut magnam tempora! Dolores quisquam hic, maxime deserunt, dolorem quasi ipsa explicabo expedita perspiciatis odit totam aspernatur repudiandae saepe reprehenderit quaerat modi. Ab, repudiandae.</p>
+
+    
     
 </body>
 </html>
