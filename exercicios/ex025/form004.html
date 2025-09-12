@@ -6,24 +6,30 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Emplo de formulario</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="imail">Email:</label>
-            <input type="email" required autocomplete="email" placeholder="Digite seu email">
-        </p>
-
-        <!--Estudar mais sobre REGEX-->
-        <p>
-            <label for="itel">Telefone</label>
-            <input type="tel" id="itel" autocomplete="tel" required pattern="">
-        </p>
-
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+    <h1>Emplo de formulário</h1>
+    <fieldset>
+        <legend>Cadastro</legend>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" id="inome">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" id="iemail" required autocomplete="email" placeholder="Digite seu email">
+            </p>
+            <!--Estudar mais sobre RegEX-->
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" id="itel" autocomplete="tel" placeholder="Digite seu telefone" required pattern="^(?:[0]?[1-9][0-9]|\([0]?[1-9][0-9]\))([\s]|[-])?[0-9]{4,5}([\s]|[-])?[0-9]{4}$">
+            </p>
+    </fieldset>        
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    
     
 </body>
 </html>
