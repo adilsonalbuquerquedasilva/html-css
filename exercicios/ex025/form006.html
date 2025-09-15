@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de formulário</title>
+    <title>Formulário</title>
 </head>
 <body>
+    <h1>Exemplo de formulário</h1>
     <form action="cadastro.php">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" id="icor" value="#00ff00">
+        </p>
 
+        <p>
+            <label for="inivel">Nivel de saturação</label>
+            <input type="range" id="inivel" min="1" max="5" value="5">
+        </p>
+
+        <p>
+            <label for="ifile"></label>
+            <input type="file" id="ifile">
+        </p>
 
 
         <p>
