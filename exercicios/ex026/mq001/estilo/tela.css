@@ -10,3 +10,40 @@ html{
     font-size: 1.5em;
     line-height: 1em;
 }
+
+header{
+    background-color: darkgray;
+
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+menu{
+    background-color: gray;
+}
+
+menu li{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(90, 87, 87);
+    color: white;
+}
+
+h2{
+    margin: 20px 0;
+}
+
+article{
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+p{
+    text-indent: 70px;
+    text-align: justify;
+    margin-top: 10px;
+}
