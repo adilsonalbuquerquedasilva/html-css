@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*Todas as demais midias*/
+
+/* Typcal Device Breakpoint
+-----------------------------
+Pequenas telas: ate 600px
+celular: de 600px até 768px
+tablet: de 768px até 992px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    /* Bacground é desnecessário para impressão*/
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    #print{
+        display: block;
+    }
+    #phone, #tablet, #pc, #tv{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #tablet{
+        display: block;
+    }    
+    #phone, #print, #pc, #tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    #pc{
+        display: block;
+    }   
+    #phone, #tablet, #print, #tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    
+    #tv{
+        display: block;
+    }   
+    #phone, #tablet, #print, #pc{
+        display: none;
+    }
+}
+
+
