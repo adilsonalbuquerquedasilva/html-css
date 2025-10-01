@@ -9,35 +9,38 @@
 <style>
     .container{
         display: flex;
+        flex-flow: row wrap;
+        align-items: start;
         background-color: lightblue;
+        height: 500px;
     }
 
     #i1{
-        order: 5;
+        align-self: self-start;
     }
 
     #i2{
-        order: 8;
+        align-self: auto;
     }
 
     #i3{
-        order: 1;
+        align-self: flex-end;
     }
 
     #i4{
-        order: -3;
+        align-self: center;
     }
 
     #i5{
-        order: -5;
+        align-self: flex-start;
     }
 
     #i6{
-        order: -6;
+        align-self: auto;
     }
 
     #i7{
-        order: -3;
+        align-self: stretch;
     }
 
     .itens{
