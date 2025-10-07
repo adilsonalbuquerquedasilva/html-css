@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1{
+    text-align: center;
+}
+
+h1, h2, p{
+    padding-bottom: 10px;
+}
+
+.flexivel{
+    background-color: lightgray;
+}
+
+.media-text{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.text-media{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+img{
+    kwidth: 400px;
+}
+
+.text{
+    flex: 1 1 500px;
+}
