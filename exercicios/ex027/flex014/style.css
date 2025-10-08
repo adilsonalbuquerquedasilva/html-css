@@ -14,24 +14,46 @@ h1, h2, p{
     padding-bottom: 10px;
 }
 
+p {
+    text-align: justify;
+    text-indent: 40px;
+    padding-right: 10px;
+}
+
 .flexivel{
     background-color: lightgray;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .media-text{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap-reverse;
+    padding: 10px;
 }
 
 .text-media{
     display: flex;
     flex-flow: row wrap;
+    padding: 10px;
 }
 
-img{
-    kwidth: 400px;
+.media img{
+    width: 560px;
+    height: 315px;
+    display: block;
+    margin: auto;
+}
+
+.media iframe{
+    display: block;
+    margin: auto;
 }
 
 .text{
     flex: 1 1 500px;
+}
+
+.media{
+    flex: 1 1 400px;
 }
